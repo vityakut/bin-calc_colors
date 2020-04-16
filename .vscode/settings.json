@@ -1,0 +1,14 @@
+{
+    "liveSassCompile.settings.formats": [
+        // You can add more
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+        },
+        // More Complex
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+        }
+    ],
+}

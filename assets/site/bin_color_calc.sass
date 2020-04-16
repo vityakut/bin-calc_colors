@@ -1,0 +1,94 @@
+$orange: #ff5722
+$gray_l: #9299a2
+$gray_d: #263238
+
+#canvas
+    display: none
+.bin_calc
+    min-height: 550px
+    &-body
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+    &-panel
+        background: lighten($gray_l, 30%)
+        border: 1px solid $gray_d
+        width: 300px
+        &__list
+            display: flex
+            flex-direction: column
+            list-style: none
+            padding: 0
+            #content &
+                list-style: none
+            &-item
+                padding: 5px 25px
+                cursor: pointer
+                font-size: 15px
+                border-left: 4px solid transparent
+                padding-right: 50px
+                &:hover
+                    background: lighten($gray_l, 40%)
+                &--active
+                    background: lighten($gray_l, 20%)
+                    border-left-color: $orange
+                &--selected
+                    position: relative
+                    &:after
+                        display: block
+                        content: ""
+                        width: 20px
+                        height: 20px
+                        top: calc(50% - 10px)
+                        right: 10px
+                        position: absolute
+                        z-index: 1000
+                        background: url(../images/ico/ok.png) #fff no-repeat center center
+                        border: 1px solid #e1e1e1
+                        border-radius: 50%
+
+        &__colors
+            display: none
+            flex-direction: row
+            flex-wrap: wrap
+            padding: 0
+            list-style: none
+            &--active
+                display: flex
+            &-item
+                display: flex
+                flex-direction: column
+                // flex-grow: 1
+                flex-basis: 10%
+                cursor: pointer
+                & img
+                    width: 100%
+                &:hover
+                    opacity: 0.8
+                &--active
+                    position: relative
+                    &:before
+                        display: block
+                        content: ""
+                        width: 50%;
+                        height: 50%
+                        top: 25%
+                        left: 25%
+                        position: absolute
+                        z-index: 1000
+                        background: url(../images/ico/ok.png) #fff no-repeat center center
+                        border: 1px solid #e1e1e1
+                        border-radius: 50%
+                    img
+                        opacity: 0.5
+
+
+
+    &-image
+        &__wrp
+            max-width: 100%
+            flex-grow: 1
+            & svg
+                width: 100%
+                & .cls-area
+                    // opacity: 0.5

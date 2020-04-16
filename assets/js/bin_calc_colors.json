@@ -1,0 +1,1368 @@
+{
+    "areas": [
+        {
+            "id": 0,
+            "name": "Кровля",
+            "svg_id": "roof",
+            "color_type": "roofs"
+        },{
+            "id": 1,
+            "name": "Лобовая доска",
+            "svg_id": "front",
+            "color_type": "colors"
+        },{
+            "id": 2,
+            "name": "Подшивы",
+            "svg_id": "under_roof",
+            "color_type": "under_roofs"
+        },{
+            "id": 4,
+            "name": "Окна",
+            "svg_id": "windows",
+            "color_type": "windows"
+        },{
+            "id": 5,
+            "name": "Наличники",
+            "svg_id": "jamb",
+            "color_type": "colors"
+        },{
+            "id": 6,
+            "name": "Стены",
+            "svg_id": "wall",
+            "color_type": "colors"
+        },{
+            "id": 7,
+            "name": "Торцы брёвен",
+            "svg_id": "butt",
+            "color_type": "colors"
+        },{
+            "id": 8,
+            "name": "Швы между брёвен",
+            "svg_id": "seal",
+            "color_type": "seal"
+        },{
+            "id": 9,
+            "name": "Ограждения(перила)",
+            "svg_id": "rail",
+            "color_type": "colors"
+        }
+    ],
+    "colors":[
+        {
+            "color": "Белая",
+            "rgb": "#fff8eb",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/11.jpg"
+        },
+        {
+            "color": "Бесцветный",
+            "rgb": "#f8e69e",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/12.jpg"
+        },
+        {
+            "color": "Сосна",
+            "rgb": "#e6b23c",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/13.jpg"
+        },
+        {
+            "color": "Лиственница",
+            "rgb": "#f3cc65",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/14.jpg"
+        },
+        {
+            "color": "Дуб",
+            "rgb": "#da8c1f",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/15.jpg"
+        },
+        {
+            "color": "Орех",
+            "rgb": "#da7928",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/16.jpg"
+        },
+        {
+            "color": "Тик",
+            "rgb": "#c34d1f",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/17.jpg"
+        },
+        {
+            "color": "Красная",
+            "rgb": "#b23517",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/18.jpg"
+        },
+        {
+            "color": "Зеленая",
+            "rgb": "#728824",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/19.jpg"
+        },
+        {
+            "color": "Голубая",
+            "rgb": "#14647b",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/20.jpg"
+        },
+        {
+            "color": "Эбеновое дерево",
+            "rgb": "#292929",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/22.jpg"
+        },
+        {
+            "color": "Махагон",
+            "rgb": "#dc9843",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/23.jpg"
+        },
+        {
+            "color": "Палисандр",
+            "rgb": "#631c06",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/24.jpg"
+        },
+        {
+            "color": "Пиния",
+            "rgb": "#eabd40",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/25.jpg"
+        },
+        {
+            "color": "Олива",
+            "rgb": "#c8aa26",
+            "group": "Белинка",
+            "image": "/assets/images/bin_calc_colors/belinka/27.jpg"
+        },
+        {
+            "color": "Сосна",
+            "rgb": "#e2a032",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/1.jpg"
+        },
+        {
+            "color": "Светлый дуб",
+            "rgb": "#c87b23",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/2.jpg"
+        },
+        {
+            "color": "Деревенский дуб",
+            "rgb": "#c6842e",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/3.jpg"
+        },
+        {
+            "color": "Пиния",
+            "rgb": "#b4652a",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/4.jpg"
+        },
+        {
+            "color": "Махагон",
+            "rgb": "#ba4a32",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/5.jpg"
+        },
+        {
+            "color": "Тик",
+            "rgb": "#a96967",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/6.jpg"
+        },
+        {
+            "color": "Каштан",
+            "rgb": "#a55427",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/7.jpg"
+        },
+        {
+            "color": "Орех",
+            "rgb": "#664a3e",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/8.jpg"
+        },
+        {
+            "color": "Палисандр",
+            "rgb": "#5c4f49",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/9.jpg"
+        },
+        {
+            "color": "Черное дерево",
+            "rgb": "#34312c",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/10.jpg"
+        },
+        {
+            "color": "Salzgrün",
+            "rgb": "#6e7152",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/11.jpg"
+        },
+        {
+            "color": "Еловая зелень",
+            "rgb": "#2b3e28",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/12.jpg"
+        },
+        {
+            "color": "Серебристо-серый",
+            "rgb": "#a3a2a7",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/13.jpg"
+        },
+        {
+            "color": "Бесцветный",
+            "rgb": "#e9c27f",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/14.jpg"
+        },
+        {
+            "color": "Hemlock",
+            "rgb": "#eeb663",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/15.jpg"
+        },
+        {
+            "color": "Белый",
+            "rgb": "#f6e5c7",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/16.jpg"
+        },
+        {
+            "color": "Синий",
+            "rgb": "#5a818a",
+            "group": "Remmers HK Lasur",
+            "image": "/assets/images/bin_calc_colors/remmers/17.jpg"
+        },
+        {
+            "color": "YS M300-R301",
+            "rgb": "#d8ca86",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/01.jpg"
+        },{
+            "color": "YS M300-R302",
+            "rgb": "#ae9349",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/02.jpg"
+        },
+        {
+            "color": "YS M300-R303",
+            "rgb": "#a26b32",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/03.jpg"
+        },
+        {
+            "color": "YS M300-R304",
+            "rgb": "#a45d2f",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/04.jpg"
+        },
+        {
+            "color": "YS M300-R305",
+            "rgb": "#79442c",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/05.jpg"
+        },
+        {
+            "color": "YS M300-R306",
+            "rgb": "#7f442f",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/06.jpg"
+        },
+        {
+            "color": "YS M300-R307",
+            "rgb": "#845542",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/07.jpg"
+        },
+        {
+            "color": "YS M300-R308",
+            "rgb": "#7e473f",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/08.jpg"
+        },
+        {
+            "color": "YS M300-R309",
+            "rgb": "#7f332f",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/09.jpg"
+        },
+        {
+            "color": "YS M300-R310",
+            "rgb": "#906445",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/10.jpg"
+        },
+        {
+            "color": "YS M300-R311",
+            "rgb": "#452d2f",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/11.jpg"
+        },
+        {
+            "color": "YS M300-R312",
+            "rgb": "#3d3032",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/12.jpg"
+        },
+        {
+            "color": "YS M300-R313",
+            "rgb": "#afaaa2",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/13.jpg"
+        },
+        {
+            "color": "YS M300-R314",
+            "rgb": "#959692",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/14.jpg"
+        },
+        {
+            "color": "YS M300-R315",
+            "rgb": "#918d8d",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/15.jpg"
+        },
+        {
+            "color": "YS M300-R316",
+            "rgb": "#7c8087",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/16.jpg"
+        },
+        {
+            "color": "YS M300-R317",
+            "rgb": "#ab8d59",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/17.jpg"
+        },
+        {
+            "color": "YS M300-R318",
+            "rgb": "#8e7149",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/18.jpg"
+        },
+        {
+            "color": "YS M300-R319",
+            "rgb": "#6c5f5a",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/19.jpg"
+        },
+        {
+            "color": "YS M300-R320",
+            "rgb": "#6d524e",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/20.jpg"
+        },
+        {
+            "color": "YS M300-R321",
+            "rgb": "#739db0",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/21.jpg"
+        },
+        {
+            "color": "YS M300-R322",
+            "rgb": "#48302e",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/22.jpg"
+        },
+        {
+            "color": "YS M300-R323",
+            "rgb": "#465f82",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/23.jpg"
+        },
+        {
+            "color": "YS M300-R324",
+            "rgb": "#666665",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/24.jpg"
+        },
+        {
+            "color": "YS M349-R351",
+            "rgb": "#bda177",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/25.jpg"
+        },
+        {
+            "color": "YS M349-R352",
+            "rgb": "#9c7745",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/26.jpg"
+        },
+        {
+            "color": "YS M349-R353",
+            "rgb": "#ad9649",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/27.jpg"
+        },
+        {
+            "color": "YS M349-R354",
+            "rgb": "#a06236",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/28.jpg"
+        },
+        {
+            "color": "YS M349-R355",
+            "rgb": "#6f3f2c",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/29.jpg"
+        },
+        {
+            "color": "YS M349-R356",
+            "rgb": "#512f2d",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/30.jpg"
+        },
+        {
+            "color": "YS M349-R357",
+            "rgb": "#542a24",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/31.jpg"
+        },
+        {
+            "color": "YS M349-R358",
+            "rgb": "#352926",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/32.jpg"
+        },
+        {
+            "color": "YS M349-R359",
+            "rgb": "#ac9367",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/33.jpg"
+        },
+        {
+            "color": "YS M349-R360",
+            "rgb": "#a48f73",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/34.jpg"
+        },
+        {
+            "color": "YS M349-R361",
+            "rgb": "#6e5d51",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/35.jpg"
+        },
+        {
+            "color": "YS M349-R362",
+            "rgb": "#3c3739",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/36.jpg"
+        },
+        {
+            "color": "YS M349-R363",
+            "rgb": "#b4ada7",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/37.jpg"
+        },
+        {
+            "color": "YS M349-R364",
+            "rgb": "#c4b091",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/38.jpg"
+        },
+        {
+            "color": "YS M349-R365",
+            "rgb": "#c3ad9f",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/39.jpg"
+        },
+        {
+            "color": "YS M349-R366",
+            "rgb": "#b8b7b7",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/40.jpg"
+        },
+        {
+            "color": "YS M349-R367",
+            "rgb": "#9ca4a9",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/41.jpg"
+        },
+        {
+            "color": "YS M349-R368",
+            "rgb": "#aba9be",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/42.jpg"
+        },
+        {
+            "color": "YS M349-R369",
+            "rgb": "#b3a2a2",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/43.jpg"
+        },
+        {
+            "color": "YS M349-R370",
+            "rgb": "#c1b9b6",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/44.jpg"
+        },
+        {
+            "color": "YS M349-R371",
+            "rgb": "#88878d",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/45.jpg"
+        },
+        {
+            "color": "YS M349-R372",
+            "rgb": "#738b99",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/46.jpg"
+        },
+        {
+            "color": "YS M349-R373",
+            "rgb": "#85564b",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/47.jpg"
+        },
+        {
+            "color": "YS M349-R374",
+            "rgb": "#5f5b5a",
+            "group": "Renner Aquaris",
+            "image": "/assets/images/bin_calc_colors/renner/48.jpg"
+        }
+
+
+    ],
+    "roofs": [
+        {
+            "color": "RAL3005",
+            "rgb": "#6d3038",
+            "group": "Полиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/1.jpg"
+        },
+        {
+            "color": "RAL3009",
+            "rgb": "#883531",
+            "group": "Полиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/2.jpg"
+        },
+        {
+            "color": "RAL3011",
+            "rgb": "#a81818",
+            "group": "Полиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/3.jpg"
+        },
+        {
+            "color": "RAL5010",
+            "rgb": "#354a89",
+            "group": "Полиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/4.jpg"
+        },
+        {
+            "color": "RAL6005",
+            "rgb": "#24653a",
+            "group": "Полиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/5.jpg"
+        },
+        {
+            "color": "RAL6020",
+            "rgb": "#49543e",
+            "group": "Полиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/6.jpg"
+        },
+        {
+            "color": "RAL6029",
+            "rgb": "#007602",
+            "group": "Полиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/7.jpg"
+        },
+        {
+            "color": "RAL8004",
+            "rgb": "#7b3423",
+            "group": "Полиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/8.jpg"
+        },
+        {
+            "color": "RAL8017",
+            "rgb": "#60453c",
+            "group": "Полиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/9.jpg"
+        },
+        {
+            "color": "RAL3005",
+            "rgb": "#a9575b",
+            "group": "Матполиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/10.jpg"
+        },
+        {
+            "color": "RAL3009",
+            "rgb": "#cb706b",
+            "group": "Матполиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/11.jpg"
+        },
+        {
+            "color": "RAL3011",
+            "rgb": "#cb2322",
+            "group": "Матполиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/12.jpg"
+        },
+        {
+            "color": "RAL7024",
+            "rgb": "#878b94",
+            "group": "Матполиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/13.jpg"
+        },
+        {
+            "color": "RAL6005",
+            "rgb": "#66be84",
+            "group": "Матполиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/14.jpg"
+        },
+        {
+            "color": "RAL6020",
+            "rgb": "#7e8c71",
+            "group": "Матполиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/15.jpg"
+        },
+        {
+            "color": "RAL8019",
+            "rgb": "#6c615d",
+            "group": "Матполиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/16.jpg"
+        },
+        {
+            "color": "RAL8004",
+            "rgb": "#d07b66",
+            "group": "Матполиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/17.jpg"
+        },
+        {
+            "color": "RAL8017",
+            "rgb": "#aa867a",
+            "group": "Матполиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/18.jpg"
+        },
+        {
+            "color": "RAL9005",
+            "rgb": "#76767e",
+            "group": "Матполиэстер",
+            "image": "/assets/images/bin_calc_colors/roof/19.jpg"
+        },
+        {
+            "color": "RAL3005",
+            "rgb": "#88363c",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/20.jpg"
+        },
+        {
+            "color": "RAL3011",
+            "rgb": "#dc2b31",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/21.jpg"
+        },
+        {
+            "color": "RAL6005",
+            "rgb": "#0f5811",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/22.jpg"
+        },
+        {
+            "color": "RAL7024",
+            "rgb": "#454545",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/23.jpg"
+        },
+        {
+            "color": "RAL8017",
+            "rgb": "#733e14",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/24.jpg"
+        },
+        {
+            "color": "RAL3009",
+            "rgb": "#7f3518",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/25.jpg"
+        },
+        {
+            "color": "RAL5005",
+            "rgb": "#2c4386",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/26.jpg"
+        },
+        {
+            "color": "RAL6020",
+            "rgb": "#3f4d00",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/27.jpg"
+        },
+        {
+            "color": "RAL8004",
+            "rgb": "#c65800",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/28.jpg"
+        },
+        {
+            "color": "RAL8019",
+            "rgb": "#53441b",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/29.jpg"
+        },
+        {
+            "color": "RAL1014",
+            "rgb": "#dfd29e",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/30.jpg"
+        },
+        {
+            "color": "RAL3005",
+            "rgb": "#730705",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/31.jpg"
+        },
+        {
+            "color": "RAL3011",
+            "rgb": "#7e251d",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/32.jpg"
+        },
+        {
+            "color": "RAL5005",
+            "rgb": "#00498d",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/33.jpg"
+        },
+        {
+            "color": "RAL6005",
+            "rgb": "#01452e",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/34.jpg"
+        },
+        {
+            "color": "RAL6020",
+            "rgb": "#233c1e",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/35.jpg"
+        },
+        {
+            "color": "RAL7016",
+            "rgb": "#282f37",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/36.jpg"
+        },
+        {
+            "color": "RAL7024",
+            "rgb": "#3e3c47",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/37.jpg"
+        },
+        {
+            "color": "RAL8004",
+            "rgb": "#8b3420",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/38.jpg"
+        },
+        {
+            "color": "RAL8017",
+            "rgb": "#36180e",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/39.jpg"
+        },
+        {
+            "color": "RAL8019",
+            "rgb": "#2b211f",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/40.jpg"
+        },
+        {
+            "color": "RAL9003",
+            "rgb": "#f1e8df",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/41.jpg"
+        },
+        {
+            "color": "RAL9005",
+            "rgb": "#111111",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/42.jpg"
+        },
+        {
+            "color": "RR23",
+            "rgb": "#464b44",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/43.jpg"
+        },
+        {
+            "color": "RR32",
+            "rgb": "#392615",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/44.jpg"
+        },
+        {
+            "color": "RR33",
+            "rgb": "#121212",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/45.jpg"
+        },
+        {
+            "color": "RR43",
+            "rgb": "#965c37",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/46.jpg"
+        },
+        {
+            "color": "RR44",
+            "rgb": "#9ca2b2",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/47.jpg"
+        },
+        {
+            "color": "RR45",
+            "rgb": "#4c4b47",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/48.jpg"
+        },
+        {
+            "color": "RR779",
+            "rgb": "#391136",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/49.jpg"
+        },
+        {
+            "color": "RR887",
+            "rgb": "#392725",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/50.jpg"
+        },
+        {
+            "color": "Золотой дуб",
+            "rgb": "#ba7731",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/51.jpg"
+        },
+        {
+            "color": "RAL1014 - Слоновая кость",
+            "rgb": "#ccb691",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/52.jpg"
+        },
+        {
+            "color": "RAL1015 - Светлая слоновая кость",
+            "rgb": "#deceb4",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/53.jpg"
+        },
+        {
+            "color": "RAL1018 - Желтый цинк",
+            "rgb": "#c6a53d",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/54.jpg"
+        },
+        {
+            "color": "RAL2004 - Чисто оранжевый",
+            "rgb": "#dc482a",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/55.jpg"
+        },
+        {
+            "color": "RAL3003 - Красный рубин",
+            "rgb": "#771011",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/56.jpg"
+        },
+        {
+            "color": "RAL3005 - Красное вино",
+            "rgb": "#53171f",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/57.jpg"
+        },
+        {
+            "color": "RAL3009 - Красная окись",
+            "rgb": "#622b2b",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/58.jpg"
+        },
+        {
+            "color": "RAL3011 - Коричнево-красный",
+            "rgb": "#71161b",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/59.jpg"
+        },
+        {
+            "color": "RAL3020 - Красный насыщенный",
+            "rgb": "#a8130f",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/60.jpg"
+        },
+        {
+            "color": "RAL5002 - Ультрамарин",
+            "rgb": "#001779",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/61.jpg"
+        },
+        {
+            "color": "RAL5005 - Синий насыщенный",
+            "rgb": "#00387a",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/62.jpg"
+        },
+        {
+            "color": "RAL5021 - Синяя вода",
+            "rgb": "#1e715f",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/63.jpg"
+        },
+        {
+            "color": "RAL6002 - Зеленый лист",
+            "rgb": "#305f2b",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/64.jpg"
+        },
+        {
+            "color": "RAL6005 - Зеленый мох",
+            "rgb": "#11432a",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/65.jpg"
+        },
+        {
+            "color": "RAL7004 - Серый",
+            "rgb": "#85858f",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/66.jpg"
+        },
+        {
+            "color": "RAL7005 - Мышиный",
+            "rgb": "#505958",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/67.jpg"
+        },
+        {
+            "color": "RAL7024 - Серый графит",
+            "rgb": "#353d48",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/68.jpg"
+        },
+        {
+            "color": "RAL8017 - Коричневый шоколад",
+            "rgb": "#362424",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/69.jpg"
+        },
+        {
+            "color": "RAL8019 - Серо-коричневый",
+            "rgb": "#363137",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/70.jpg"
+        },
+        {
+            "color": "RAL9002 - Серо-белый",
+            "rgb": "#b2aeaa",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/roof/71.jpg"
+        }
+
+
+
+
+
+
+
+    ],
+    "windows": [
+        {
+            "color": "Светлый дуб",
+            "rgb": "#906e31",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/1.jpg"
+        },
+        {
+            "color": "Ирландский дуб",
+            "rgb": "#ba8163",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/2.jpg"
+        },
+        {
+            "color": "Горная сосна",
+            "rgb": "#987a31",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/3.jpg"
+        },
+        {
+            "color": "Орегон",
+            "rgb": "#be713d",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/4.jpg"
+        },
+        {
+            "color": "Орех",
+            "rgb": "#653c2a",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/5.jpg"
+        },
+        {
+            "color": "Дуглас",
+            "rgb": "#a96149",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/6.jpg"
+        },
+        {
+            "color": "Дуб",
+            "rgb": "#47211a",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/7.jpg"
+        },
+        {
+            "color": "Мореный дуб",
+            "rgb": "#281310",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/8.jpg"
+        },
+        {
+            "color": "Мореный дуб",
+            "rgb": "#2a1210",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/9.jpg"
+        },
+        {
+            "color": "Шоколадно-коричневый",
+            "rgb": "#2a211a",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/10.jpg"
+        },
+        {
+            "color": "Коричневый каштан",
+            "rgb": "#150803",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/11.jpg"
+        },
+        {
+            "color": "Черная вишня",
+            "rgb": "#461b15",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/12.jpg"
+        },
+        {
+            "color": "Золотой дуб",
+            "rgb": "#874a28",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/13.jpg"
+        },
+        {
+            "color": "Зимний дуглас",
+            "rgb": "#8f6629",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/14.jpg"
+        },
+        {
+            "color": "Золтой орех",
+            "rgb": "#46170f",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/15.jpg"
+        },
+        {
+            "color": "Темный дуб",
+            "rgb": "#55442f",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/16.jpg"
+        },
+        {
+            "color": "Темно-коричневый",
+            "rgb": "#0d130b",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/17.jpg"
+        },
+        {
+            "color": "Махагон",
+            "rgb": "#503126",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/18.jpg"
+        },
+        {
+            "color": "Винно-красный",
+            "rgb": "#540a11",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/19.jpg"
+        },
+        {
+            "color": "Темно-красный",
+            "rgb": "#8e1812",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/20.jpg"
+        },
+        {
+            "color": "Красный",
+            "rgb": "#b31524",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/21.jpg"
+        },
+        {
+            "color": "Темно-зеленый",
+            "rgb": "#457c56",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/22.jpg"
+        },
+        {
+            "color": "Зеленый",
+            "rgb": "#06552b",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/23.jpg"
+        },
+        {
+            "color": "Бриллиантово-синий",
+            "rgb": "#2a7aa0",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/24.jpg"
+        },
+        {
+            "color": "Темно-синий",
+            "rgb": "#3d4859",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/25.jpg"
+        },
+        {
+            "color": "Антрацитово-серый",
+            "rgb": "#3f3a3f",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/26.jpg"
+        },
+        {
+            "color": "Серый",
+            "rgb": "#979b9e",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/27.jpg"
+        },
+        {
+            "color": "Агатово-серый",
+            "rgb": "#cacbc6",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/28.jpg"
+        },
+        {
+            "color": "Светло-серый",
+            "rgb": "#dfe3e6",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/29.jpg"
+        },
+        {
+            "color": "Кремовый",
+            "rgb": "#fefaf7",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/30.jpg"
+        },
+        {
+            "color": "Темный дуб",
+            "rgb": "#6a3e23",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/31.jpg"
+        },
+
+        {
+            "color": "Дуб",
+            "rgb": "#915613",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/32.jpg"
+        },
+        {
+            "color": "Орех",
+            "rgb": "#724216",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/33.jpg"
+        },
+
+        {
+            "color": "Махагон",
+            "rgb": "#8a2b22",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/34.jpg"
+        },
+
+        {
+            "color": "Полосатый дуглас",
+            "rgb": "#bf6200",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/35.jpg"
+        },
+
+        {
+            "color": "Мореный дуб",
+            "rgb": "#4e3423",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/36.jpg"
+        },
+
+        {
+            "color": "Светло-серый",
+            "rgb": "#d2f1d9",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/37.jpg"
+        },
+
+        {
+            "color": "Золотой дуб",
+            "rgb": "#955600",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/38.jpg"
+        },
+
+        {
+            "color": "Натуральный дуб",
+            "rgb": "#dab558",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/39.jpg"
+        },
+
+        {
+            "color": "Орегон",
+            "rgb": "#cd8c00",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/40.jpg"
+        },
+
+        {
+            "color": "Дуб KBE",
+            "rgb": "#8e4b01",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/41.jpg"
+        },
+        {
+            "color": "Горная сосна",
+            "rgb": "#c89f27",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/42.jpg"
+        },
+        {
+            "color": "Темно-коричневый",
+            "rgb": "#2a2716",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/43.jpg"
+        },
+        {
+            "color": "Антрацитово-серый",
+            "rgb": "#343640",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/44.jpg"
+        },
+        {
+            "color": "Темно-зеленый",
+            "rgb": "#003b25",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/45.jpg"
+        },
+        {
+            "color": "Зеленый",
+            "rgb": "#00af00",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/46.jpg"
+        },
+        {
+            "color": "Черный",
+            "rgb": "#232310",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/47.jpg"
+        },
+        {
+            "color": "Синий",
+            "rgb": "#0096c0",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/48.jpg"
+        },
+        {
+            "color": "Изумруд",
+            "rgb": "#005b32",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/49.jpg"
+        },
+        {
+            "color": "Бордо",
+            "rgb": "#a01a22",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/50.jpg"
+        },
+        {
+            "color": "Темно-красный",
+            "rgb": "#b60405",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/windows/51.jpg"
+        }
+    ],
+    "under_roofs": [
+        {
+            "color": "Гладкий белый",
+            "rgb": "#e9e9e9",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/under_roofs/1.jpg"
+        },
+        {
+            "color": "Белый с перфорацией",
+            "rgb": "#e9e9e9",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/under_roofs/2.jpg"
+        },
+        {
+            "color": "Белый с перфорацией",
+            "rgb": "#e9e9e9",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/under_roofs/3.jpg"
+        },
+        {
+            "color": "Гладкий коричневый",
+            "rgb": "#614539",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/under_roofs/4.jpg"
+        },
+        {
+            "color": "Коричневый с перфорацией",
+            "rgb": "#614539",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/under_roofs/5.jpg"
+        },
+        {
+            "color": "Коричневый с перфорацией",
+            "rgb": "#614539",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/under_roofs/6.jpg"
+        }
+
+    ],
+    "seal": [
+        {
+            "color": "Белый",
+            "rgb": "#dddede",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/seals/1.jpg"
+        },
+        {
+            "color": "Сосна",
+            "rgb": "#f3e9a8",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/seals/2.jpg"
+        },
+        {
+            "color": "Калужница",
+            "rgb": "#734420",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/seals/3.jpg"
+        },
+        {
+            "color": "Орех",
+            "rgb": "#462211",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/seals/4.jpg"
+        },
+        {
+            "color": "Груша",
+            "rgb": "#c37225",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/seals/5.jpg"
+        },
+        {
+            "color": "Палисандр",
+            "rgb": "#3e0f0e",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/seals/6.jpg"
+        },
+        {
+            "color": "Серый",
+            "rgb": "#a1a2a0",
+            "group": "",
+            "image": "/assets/images/bin_calc_colors/seals/7.jpg"
+        }
+    ]
+}
