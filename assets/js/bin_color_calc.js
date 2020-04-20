@@ -13,7 +13,7 @@ $(document).ready(function () {
         });
 
         var a = document.createElement('a');
-        a.setAttribute('download', 'MY_COOL_IMAGE.jpg');
+        a.setAttribute('download', 'bin-doma.ru_colors.png');
         a.setAttribute('href', imgURI);
         a.setAttribute('target', '_blank');
 
@@ -25,27 +25,20 @@ $(document).ready(function () {
         var ctx = canvas.getContext('2d');
         var data = (new XMLSerializer()).serializeToString(svg);
         var DOMURL = window.URL || window.webkitURL || window;
-
         var img = new Image();
         var svgBlob = new Blob([data], { type: 'image/svg+xml;charset=utf-8' });
         var url = DOMURL.createObjectURL(svgBlob);
-
+        img.src = url;
         img.onload = function () {
-            // ctx.drawImage(img, 0, 0);
-            var canvas = document.createElement('canvas');
-            canvas.width = this.naturalWidth;
-            canvas.height = this.naturalHeight;
+            canvas.width = 1900;
+            canvas.height = 950;
             ctx.drawImage(img, 0, 0);
             DOMURL.revokeObjectURL(url);
-
             var imgURI = canvas
-                .toDataURL('image/jpg')
-                .replace('image/jpg', 'image/octet-stream');
-
+                .toDataURL('image/png')
+                .replace('image/png', 'image/octet-stream');
             triggerDownload(imgURI);
         };
-
-        img.src = url;
     });
 
     $(document).on("click", ".js-download", function (e) {

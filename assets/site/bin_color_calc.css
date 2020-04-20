@@ -146,4 +146,16 @@
 .bin_calc-image__wrp svg {
   width: 100%;
 }
+
+.bin_calc-footer {
+  text-align: center;
+  padding: 20px 15px;
+  background: #e5e6e8;
+  border: 1px solid #263238;
+  border-right: none;
+}
+
+.bin_calc-footer .btn {
+  background: #fff;
+}
 /*# sourceMappingURL=bin_color_calc.css.map */

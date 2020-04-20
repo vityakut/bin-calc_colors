@@ -2,8 +2,14 @@
 <script type="text/javascript" src="/assets/js/bin_color_calc.min.js"></script>
 <div id="bin_calc" class="bin_calc">
     <div class="bin_calc-body">
-        <div class="bin_calc-image__wrp">[[ file_get_contents? &path=`[(base_path)]/assets/images/bin_calc_colors.svg`
-            ]]</div>
+        <div class="bin_calc-image__wrp">
+            <canvas id="canvas"></canvas>
+            [[ file_get_contents? &path=`[(base_path)]/assets/images/bin_calc_colors.svg`
+            ]]
+            <div class="bin_calc-footer">
+                <button class="btn js-download">Скачать</button>
+            </div>
+        </div>
         <div class="bin_calc-panel">
             <ul class="bin_calc-panel__list js-bin_calc-panel__list"></ul>
             <ul class="bin_calc-panel__colors js-bin_calc-panel__colors" data-type="colors"></ul>
