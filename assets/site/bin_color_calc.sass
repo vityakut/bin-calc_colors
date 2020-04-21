@@ -2,6 +2,9 @@ $orange: #ff5722
 $gray_l: #9299a2
 $gray_d: #263238
 
+$phone: 'screen and (max-width: 767px)'
+$tablet: 'screen and (min-width: 768px) and (max-width: 991px)'
+
 #canvas
     display: none
 .bin_calc
@@ -9,11 +12,14 @@ $gray_d: #263238
     &-body
         display: flex
         flex-direction: row
-        flex-wrap: wrap
+        @media #{$phone}
+            flex-direction: column-reverse
     &-panel
         background: lighten($gray_l, 30%)
         border: 1px solid $gray_d
         width: 300px
+        @media #{$phone}
+            width: 100%
         &__list
             display: flex
             flex-direction: column
@@ -75,7 +81,7 @@ $gray_d: #263238
                         top: 25%
                         left: 25%
                         position: absolute
-                        z-index: 1000
+                        z-index: 1
                         background: url(../images/ico/ok.png) #fff no-repeat center center
                         border: 1px solid #e1e1e1
                         border-radius: 50%
@@ -98,5 +104,8 @@ $gray_d: #263238
         background: lighten($gray_l, 30%)
         border: 1px solid $gray_d
         border-right: none
+        // display: flex
+        flex-direction: row
+        align-items: center
         .btn
             background: #fff
