@@ -100,16 +100,37 @@ $(document).ready(function () {
             const type = types[t];
             let colors = $(".js-bin_calc-panel__colors[data-type='"+type+"']");
             let colors_arr = json[type];
+            let groups = [];
+
             for (let i = 0; i < colors_arr.length; i++) {
                 let color = $("<li></li>").addClass("bin_calc-panel__colors-item").attr({
                     "data-rgb": colors_arr[i].rgb,
-                    "data-color_id": type+i,
+                    "data-color_id": type + i,
                     'title': colors_arr[i].color,
                 });
                 if (colors_arr[i].image) $("<img />").attr('src', colors_arr[i].image).appendTo(color);
                 if (colors_arr[i].opacity) color.attr("data-opacity", colors_arr[i].opacity);
-                color.appendTo(colors);
+
+                if (colors_arr[i].group.length){
+                    if (!Object.keys(groups).includes(colors_arr[i].group)) {
+                        groups[colors_arr[i].group] = [];
+                        groups[colors_arr[i].group].push($('<div></div>').addClass("bin_calc-panel__colors-group").text(colors_arr[i].group));
+                    }
+                    groups[colors_arr[i].group].push(color);
+                } else {
+                    if (!Object.keys(groups).includes('other')) {
+                        groups.other = [];
+                        groups.other.push($('<div></div>').addClass("bin_calc-panel__colors-group"));
+                    }
+                    groups.other.push(color);
+                }
             }
+            for (g in groups) {
+                $.each(groups[g], function(i, group) {
+                    group.appendTo(colors);
+                });
+            }
+
         }
     }
 
