@@ -1,9 +1,5 @@
 $(document).ready(function () {
     var bin_calc_colors = {};
-    var btn = document.querySelector('button.js-download');
-    var svg = document.querySelector('#house');
-    var canvas = document.querySelector('canvas');
-
 
     function triggerDownload(imgURI) {
         var evt = new MouseEvent('click', {
@@ -20,29 +16,67 @@ $(document).ready(function () {
         a.dispatchEvent(evt);
     }
 
-    btn.addEventListener('click', function () {
+    $(document).on("click", ".js-download", function (e) {
+        e.preventDefault();
+        let colors = [];
+        for (c in bin_calc_colors) {
+            if (bin_calc_colors[c].color_id) colors.push(bin_calc_colors[c]);
+        }
+
         var canvas = document.getElementById('canvas');
+        var svg = document.getElementById('house');
         var ctx = canvas.getContext('2d');
         var data = (new XMLSerializer()).serializeToString(svg);
         var DOMURL = window.URL || window.webkitURL || window;
         var img = new Image();
         var svgBlob = new Blob([data], { type: 'image/svg+xml;charset=utf-8' });
         var url = DOMURL.createObjectURL(svgBlob);
+        let img_size = {
+            'w': 1900,
+            'h': 950,
+            'footer_columns': 2,
+        };
+        img_size.footer_rows = Math.ceil(colors.length / 2);
+        img_size.footer_h = colors.length ? img_size.footer_rows * 40 + 120 : 0;
+        let copyright = 'www.bin-doma.ru';
         img.src = url;
         img.onload = function () {
-            canvas.width = 1900;
-            canvas.height = 950;
-            ctx.drawImage(img, 0, 0);
-            DOMURL.revokeObjectURL(url);
-            var imgURI = canvas
-                .toDataURL('image/png')
-                .replace('image/png', 'image/octet-stream');
-            triggerDownload(imgURI);
-        };
-    });
+            canvas.width = img_size.w;
+            canvas.height = img_size.h + img_size.footer_h;
+            ctx.globalAlpha = 1;
+            ctx.drawImage(img, 0, 0, img_size.w, img_size.h);
+            let logo = new Image(100,89);
+            logo.src = "/assets/images/style/logo-new.png";
+            logo.onload = function () {
+                ctx.globalAlpha = 0.7;
+                ctx.drawImage(logo, 50, img_size.h - 100);
+                ctx.globalAlpha = 1;
+                if (colors.length) {
+                    ctx.fillStyle = 'rgb(255,255,255)';
+                    ctx.fillRect(0,img_size.h, img_size.w, img_size.footer_h);
+                    ctx.fillStyle = 'rgb(255, 87, 34)';
+                    ctx.fillRect(0, img_size.h, img_size.w, 10);
+                    ctx.font = '28px sans-serif';
+                    ctx.fillStyle = 'rgb(102, 102, 102)';
+                    let copyright_w = Math.floor(ctx.measureText(copyright).width) + 40;
+                    ctx.fillText(copyright, img_size.w - copyright_w, img_size.h+img_size.footer_h - 40);
+                    ctx.fillStyle = 'rgb(20,20,20)';
+                    let y = img_size.h + 70;
+                    let x = 50;
+                    let dx = Math.floor(img_size.w / img_size.footer_columns);
+                    let dy = 40;
+                    for (let i = 0; i < colors.length; i++) {
+                        let group = colors[i].group ? colors[i].group + " - " : "";
+                        text = `${colors[i].zone}: ${group}${colors[i].name}`;
+                        ctx.fillText(text, x + ((Math.floor(i / img_size.footer_rows)) * dx), y + ((i % img_size.footer_rows) * dy));
+                    }
+                }
 
-    $(document).on("click", ".js-download", function (e) {
-        e.preventDefault();
+                DOMURL.revokeObjectURL(url);
+                var imgURI = canvas.toDataURL('image/png').replace('image/png', 'image/octet-stream');
+                triggerDownload(imgURI);
+            };
+        };
 
 
     });
@@ -61,14 +95,16 @@ $(document).ready(function () {
     $(document).on("click", ".bin_calc-panel__colors-item", function (e) {
         let svg = $(".bin_calc-panel__list-item--active").data('svg');
         if (!$(this).hasClass("bin_calc-panel__colors-item--active")) {
+            bin_calc_colors[svg].zone = $(".bin_calc-panel__list-item.bin_calc-panel__list-item--active").text();
             bin_calc_colors[svg].color = $(this).data("rgb");
             bin_calc_colors[svg].color_id = $(this).data("color_id");
-
+            bin_calc_colors[svg].group = $(this).data("group");
+            bin_calc_colors[svg].name = $(this).attr("title");
             $(this).addClass("bin_calc-panel__colors-item--active").siblings().removeClass("bin_calc-panel__colors-item--active");
             $(".bin_calc-panel__list-item.bin_calc-panel__list-item--active").addClass("bin_calc-panel__list-item--selected");
         } else{
+            bin_calc_colors[svg] = {};
             bin_calc_colors[svg].color = "none";
-            bin_calc_colors[svg].color_id = "";
             $(this).removeClass("bin_calc-panel__colors-item--active");
             $(".bin_calc-panel__list-item.bin_calc-panel__list-item--active").removeClass("bin_calc-panel__list-item--selected");
         }
@@ -105,6 +141,7 @@ $(document).ready(function () {
             for (let i = 0; i < colors_arr.length; i++) {
                 let color = $("<li></li>").addClass("bin_calc-panel__colors-item").attr({
                     "data-rgb": colors_arr[i].rgb,
+                    "data-group": colors_arr[i].group,
                     "data-color_id": type + i,
                     'title': colors_arr[i].color,
                 });

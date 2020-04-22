@@ -82,7 +82,7 @@
   top: calc(50% - 10px);
   right: 10px;
   position: absolute;
-  z-index: 1000;
+  z-index: 3;
   background: url(../images/ico/ok.png) #fff no-repeat center center;
   border: 1px solid #e1e1e1;
   border-radius: 50%;
@@ -169,7 +169,6 @@
   text-align: center;
   padding: 20px 15px;
   background: #e5e6e8;
-  border: 1px solid #263238;
   border-right: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
